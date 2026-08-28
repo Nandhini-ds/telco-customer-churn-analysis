@@ -20,7 +20,6 @@ Saved the cleaned dataset for further analysis.
 Connected the prepared data to Power BI.
 Created visualizations to analyze customer churn and related factors.
 ## 5. Machine Learning – Baseline Model
-* Started the machine learning model-building phase.
 * Built a **Logistic Regression** model as the baseline model.
 * Achieved an accuracy of approximately **81%** on the test data.
 * Further model development and evaluation will be performed to improve the prediction performance.
