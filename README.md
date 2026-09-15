@@ -3,21 +3,66 @@
 This project focuses on analyzing customer churn in the telecommunications industry using SQL Server, Python, Machine Learning, MLflow, and Power BI.
 
 The objective is to understand customer churn patterns, identify important factors associated with churn, build and compare machine learning models, track experiments using MLflow, and create a dashboard for analyzing churn predictions.
+
+## Dataset Source
+The project uses the Telco Customer Churn dataset, which contains customer information and churn-related details from a telecommunications company.
+The dataset contains customer information such as gender, partner and dependent status, account information, subscribed services, billing details, and customer churn status.
+
+Dataset: Telco Customer Churn
+Rows: 7,043
+Columns: 21
+Target variable: Churn
+Source: Internship Project Details Page 
+
 ## Project Workflow
 
-# SQL Server → Python & EDA → Data Preprocessing → Machine Learning → MLflow → Churn Predictions → Power BI
+**SQL Server → Python & EDA → Data Preprocessing → Machine Learning → MLflow → Churn Predictions → Power BI**
 
-## Key Work
-* Loaded and analyzed the Telco Customer Churn dataset using SQL Server and Python.
-* Performed data cleaning, preprocessing, and feature engineering.
-* Built and evaluated Logistic Regression, Random Forest, and XGBoost models.
-* Applied SMOTE to address class imbalance.
-* Used MLflow to track and compare machine learning experiments.
-* Generated churn predictions and churn probabilities.
-* Created an interactive Power BI dashboard to analyze customer churn and identify high-risk customers.
+## How to Run the Project
 
-## Model Result
-The tuned XGBoost model achieved the highest churn recall of 83.96%, making it useful for identifying customers who are likely to churn.
+### 1. SQL Server
+
+* Install **SQL Server Express** and **SQL Server Management Studio (SSMS)**.
+* Create the `ChurnDB` database.
+* Import the Telco Customer Churn dataset into SQL Server.
+* Create the required SQL tables and views.
+* The project uses the SQL view `vw_ChurnData` to provide data for the Python analysis.
+
+### 3. Power BI
+
+* Open the Power BI report `Churn Prediction Power BI.pbix`.
+* Connect the report to the generated churn prediction data.
+* Refresh the data to load the latest predictions.
+* Use the dashboard to analyze churn patterns, customer segments, and high-risk customers.
+
+### 2. Python / Jupyter Notebook
+
+* Connect Python to SQL Server using `pyodbc`.
+* Load data from the `vw_ChurnData` SQL view into Pandas.
+* Perform data cleaning, missing-value handling, EDA, and feature engineering.
+* Train and evaluate machine learning models and handle class imbalance using SMOTE.
+* Track experiments using MLflow and generate churn predictions.
+* Save the trained pipeline as `churn_prediction_pipeline.pkl`.
+
+## Model Results
+
+Three machine learning models were evaluated: Logistic Regression, Random Forest, and XGBoost.
+
+The tuned XGBoost model was selected as the final model because it achieved the highest **churn recall of 83.96%**, which is important for identifying customers who are likely to churn.
+
+| Metric    | XGBoost |
+| --------- | ------: |
+| Accuracy  |  67.78% |
+| Precision |  44.35% |
+| Recall    |  83.96% |
+| F1-Score  |  58.04% |
+
+## Testing & Debugging
+* Verified all required Python dependencies and resolved missing package issues.
+* Restarted the Jupyter kernel and successfully executed the complete notebook from top to bottom.
+* Resolved a missing-value issue encountered during model training.
+* Tested the Power BI refresh and resolved a `Contract` column transformation issue in Power Query.
+* Verified that the Power BI dashboard refreshed successfully and the `Contract` visual displayed Month-to-month, One year, and Two year categories.
 
 ## Tools & Technologies
 * SQL Server
