@@ -79,4 +79,19 @@ The tuned XGBoost model was selected as the final model because it achieved the 
 * MLflow
 * Power BI
 * Jupyter Notebook
+* 
+## Streamlit Churn Prediction App
+
+An interactive Streamlit application was developed to predict customer churn probability using the trained XGBoost model.
+
+Users can enter customer details and receive a churn probability with a **High Churn Risk** or **Low Churn Risk** classification.
+
+### Streamlit App
+
+![Streamlit Customer Input](images/streamlit_input.png)
+
+### Prediction Result
+
+![Streamlit Prediction Result](images/streamlit_prediction.png)
+
 
