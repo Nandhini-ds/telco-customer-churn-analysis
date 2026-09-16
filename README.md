@@ -90,7 +90,7 @@ Users can enter customer details and receive a churn probability with a **High C
 
 ![Low Churn Risk Prediction](images/low_churn_prediction.png)
 
-![High Churn Risk Prediction](images/high_churn_prediction.png)
+![High Churn Risk Prediction](images/high_churn_predicition.png)
 
 
 
