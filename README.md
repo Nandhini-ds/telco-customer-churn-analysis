@@ -92,5 +92,17 @@ Users can enter customer details and receive a churn probability with a **High C
 
 ![High Churn Risk Prediction](images/high_churn_predicition.png)
 
+## Docker Deployment
+The Streamlit churn prediction app was containerized using Docker for a portable deployment.
+
+### Build the Docker Image
+docker build -t telco-churn-app .
+
+### Run the Docker Container
+docker run -p 8501:8501 telco-churn-app
+
+Then open `http://localhost:8501` in a browser to access the Streamlit application.
+
+
 
 
