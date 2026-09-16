@@ -1,9 +1,0 @@
-pandas
-pyodbc
-scikit-learn
-matplotlib
-imbalanced-learn
-xgboost
-mlflow
-lime
-joblib
