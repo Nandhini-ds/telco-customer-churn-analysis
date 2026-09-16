@@ -88,10 +88,9 @@ Users can enter customer details and receive a churn probability with a **High C
 
 ### Streamlit App
 
-![Streamlit Customer Input](images/streamlit_input.png)
+![Low Churn Risk Prediction](images/low_churn_prediction.png)
 
-### Prediction Result
+![High Churn Risk Prediction](images/high_churn_prediction.png)
 
-![Streamlit Prediction Result](images/streamlit_prediction.png)
 
 
