@@ -90,7 +90,7 @@ Users can enter customer details and receive a churn probability with a **High C
 
 ![Low Churn Risk Prediction](images/low_churn_prediction.png)
 
-![High Churn Risk Prediction](images/high_churn_predicition.png)
+![High Churn Risk Prediction](images/high_churn_prediction.png)
 
 ## Docker Deployment
 The Streamlit churn prediction app was containerized using Docker for a portable deployment.
