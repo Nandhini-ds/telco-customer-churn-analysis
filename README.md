@@ -17,6 +17,7 @@ Source: Internship Project Details Page
 ## Project Workflow
 
 **SQL Server → Python & EDA → Data Preprocessing → Machine Learning → MLflow → Churn Predictions → Power BI**
+
 The project follows the workflow shown below.
 
 <img width="3196" height="3000" alt="image" src="https://github.com/user-attachments/assets/d040a81f-ba83-49e1-959c-13874e440c2c" />
