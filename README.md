@@ -1,6 +1,6 @@
 # Customer Churn Prediction
 ## Project Overview
-This project focuses on analyzing customer churn in the telecommunications industry using SQL Server, Python, Machine Learning, MLflow, and Power BI.
+This project focuses on analyzing customer churn in the telecommunications industry using **SQL Server, Python, Machine Learning, MLflow, Power BI and Streamlit**.
 
 The objective is to understand customer churn patterns, identify important factors associated with churn, build and compare machine learning models, track experiments using MLflow, and create a dashboard for analyzing churn predictions.
 
@@ -81,7 +81,6 @@ The tuned XGBoost model was selected as the final model because it achieved the 
 * Jupyter Notebook
 * 
 ## Streamlit Churn Prediction App
-
 An interactive Streamlit application was developed to predict customer churn probability using the trained XGBoost model.
 
 Users can enter customer details and receive a churn probability with a **High Churn Risk** or **Low Churn Risk** classification.
@@ -102,6 +101,19 @@ docker build -t telco-churn-app .
 docker run -p 8501:8501 telco-churn-app
 
 Then open `http://localhost:8501` in a browser to access the Streamlit application.
+
+## Key Insights
+* Month-to-month contract customers show higher churn.
+* Customers using electronic check show higher churn.
+* Customers without technical support show higher churn.
+* One-year and two-year contract customers show lower churn.
+
+## Recommendations
+* Offer contract upgrade incentives to high-risk month-to-month customers.
+* Provide technical support or service bundles to eligible high-risk customers.
+* Encourage automatic payment enrollment for high-risk customers using electronic checks.
+* Use personalized retention outreach for other high-risk customers.
+
 
 
 
