@@ -32,14 +32,7 @@ The project follows the workflow shown below.
 * Import the Telco Customer Churn dataset into SQL Server.
 * Create the required SQL tables and views.
 * The project uses the SQL view `vw_ChurnData` to provide data for the Python analysis.
-
-### 3. Power BI
-
-* Open the Power BI report `Churn Prediction Power BI.pbix`.
-* Connect the report to the generated churn prediction data.
-* Refresh the data to load the latest predictions.
-* Use the dashboard to analyze churn patterns, customer segments, and high-risk customers.
-
+  
 ### 2. Python / Jupyter Notebook
 
 * Connect Python to SQL Server using `pyodbc`.
@@ -48,6 +41,14 @@ The project follows the workflow shown below.
 * Train and evaluate machine learning models and handle class imbalance using SMOTE.
 * Track experiments using MLflow and generate churn predictions.
 * Save the trained pipeline as `churn_prediction_pipeline.pkl`.
+
+### 3. Power BI
+
+* Open the Power BI report `Churn Prediction Power BI.pbix`.
+* Connect the report to the generated churn prediction data.
+* Refresh the data to load the latest predictions.
+* Use the dashboard to analyze churn patterns, customer segments, and high-risk customers.
+
 
 ## Model Results
 
@@ -63,6 +64,7 @@ The tuned XGBoost model was selected as the final model because it achieved the 
 | F1-Score  |  58.04% |
 
 ## Testing & Debugging
+
 * Verified all required Python dependencies and resolved missing package issues.
 * Restarted the Jupyter kernel and successfully executed the complete notebook from top to bottom.
 * Resolved a missing-value issue encountered during model training.
@@ -70,6 +72,7 @@ The tuned XGBoost model was selected as the final model because it achieved the 
 * Verified that the Power BI dashboard refreshed successfully and the `Contract` visual displayed Month-to-month, One year, and Two year categories.
 
 ## Tools & Technologies
+
 * SQL Server
 * SQL
 * Python
@@ -80,7 +83,7 @@ The tuned XGBoost model was selected as the final model because it achieved the 
 * MLflow
 * Power BI
 * Jupyter Notebook
-* 
+
 ## Streamlit Churn Prediction App
 An interactive Streamlit application was developed to predict customer churn probability using the trained XGBoost model.
 
